@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887953833370",
+    "project_id": "mentawareug",
+    "storage_bucket": "mentawareug.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887953833370:android:f7da2d7cf1d8418cd54e23",
+        "android_client_info": {
+          "package_name": "com.mentawareug.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj33UbB-Z2xRxRWUkD6yjNLozpgDHxxT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
