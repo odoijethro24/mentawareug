@@ -9,7 +9,8 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(237, 245, 225, 1),
+      backgroundColor:
+          Color.fromRGBO(245, 245, 245, 1), // Light gray background
       body: MediaQuery.of(context).size.width < 750
           ? Column(
               children: [
@@ -23,7 +24,7 @@ class Welcome extends StatelessWidget {
                 Expanded(
                   flex: 4,
                   child: Welcomecard(),
-                )
+                ),
               ],
             ),
     );

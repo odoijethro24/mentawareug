@@ -7,39 +7,47 @@ class Welcomecard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(50.0),
+      padding: const EdgeInsets.all(30.0),
       child: Card(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'WELCOME',
-              style: TextStyle(
-                color: Color.fromRGBO(51, 51, 51, 1),
-                fontFamily: 'Poppins',
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'WELCOME',
+                style: TextStyle(
+                  color: Color.fromRGBO(51, 51, 51, 1),
+                  fontFamily: 'Poppins',
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: PrimaryButton(
-                text: 'Normal User',
-                width: 300,
-                onPressed: () {
-                  Navigator.pushNamed(context, '/login');
-                },
+              SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: PrimaryButton(
+                  text: 'Normal User',
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/login');
+                  },
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: PrimaryButton(
-                text: 'Professional',
-                width: 300,
-                onPressed: () {},
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: PrimaryButton(
+                  text: 'Professional',
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  onPressed: () {},
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

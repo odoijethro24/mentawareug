@@ -7,50 +7,28 @@ class MainMenuSidePanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: 250,
       decoration: BoxDecoration(
-        color: Color.fromRGBO(194, 218, 216, 1),
+        color: Color.fromRGBO(194, 218, 216, 1), // Soft teal
         borderRadius: BorderRadius.only(
-          topRight: Radius.circular(15),
-          bottomRight: Radius.circular(15),
+          topRight: Radius.circular(20),
+          bottomRight: Radius.circular(20),
         ),
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Logo(logo_radius: 50),
-          Padding(
-            padding: const EdgeInsets.all(30),
-            child: Card(
-              color: Color.fromRGBO(245, 252, 255, 1.0),
-              child: Padding(
-                padding: const EdgeInsets.all(15),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Logged In As: ",
-                      style: TextStyle(
-                        color: Color.fromRGBO(100, 140, 160, 1.0),
-                        fontFamily: 'Poppins',
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      "Nickname: ",
-                      style: TextStyle(
-                        color: Color.fromRGBO(100, 140, 160, 1.0),
-                        fontFamily: 'Poppins',
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+          SizedBox(height: 10),
+          Text(
+            "Main Menu",
+            style: TextStyle(
+              color: Color.fromRGBO(51, 51, 51, 1),
+              fontFamily: 'Poppins',
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
             ),
-          )
+          ),
         ],
       ),
     );

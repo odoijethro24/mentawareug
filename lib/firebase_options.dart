@@ -72,4 +72,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'mentawareug.firebasestorage.app',
     iosBundleId: 'com.example.mentawareUg',
   );
+
 }
